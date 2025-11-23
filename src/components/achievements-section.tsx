@@ -1,0 +1,224 @@
+"use client"
+
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { Award, BookOpen, Briefcase, GraduationCap, Trophy } from "lucide-react"
+import { motion } from "framer-motion"
+import { useInView } from "framer-motion"
+import { useRef } from "react"
+
+const education = [
+  {
+    degree: "Bachelor of Technology in Information Technology",
+    institution: "Your University Name",
+    period: "2022 - 2026",
+    description: "Currently in 3rd year with CGPA: 8.5/10",
+  },
+  {
+    degree: "Higher Secondary Education",
+    institution: "Your School Name",
+    period: "2020 - 2022",
+    description: "Percentage: 92%",
+  },
+]
+
+const achievements = [
+  {
+    title: "Hackathon Winner",
+    organization: "TechFest 2024",
+    description: "1st place in 36-hour hackathon with 200+ participants",
+    icon: Trophy,
+  },
+  {
+    title: "Google Cloud Certified",
+    organization: "Google Cloud Platform",
+    description: "Associate Cloud Engineer Certification",
+    icon: Award,
+  },
+  {
+    title: "Smart India Hackathon",
+    organization: "Government of India",
+    description: "Finalist in SIH 2023 - Software Edition",
+    icon: Trophy,
+  },
+  {
+    title: "Research Paper Published",
+    organization: "IEEE Conference",
+    description: "Published paper on Machine Learning applications in Healthcare",
+    icon: BookOpen,
+  },
+  {
+    title: "Coding Competition",
+    organization: "CodeChef",
+    description: "Ranked in top 100 in monthly coding challenge",
+    icon: Trophy,
+  },
+  {
+    title: "Internship",
+    organization: "Tech Company XYZ",
+    description: "Summer internship as Full Stack Developer",
+    icon: Briefcase,
+  },
+]
+
+const certifications = [
+  "AWS Certified Cloud Practitioner",
+  "MongoDB Developer Certification",
+  "Meta Front-End Developer Professional Certificate",
+  "Google IT Automation with Python",
+  "Microsoft Azure Fundamentals",
+  "NPTEL - Data Structures and Algorithms",
+]
+
+const container = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.1,
+    },
+  },
+}
+
+const item = {
+  hidden: { opacity: 0, y: 20, scale: 0.95 },
+  show: { opacity: 1, y: 0, scale: 1 },
+}
+
+export function AchievementsSection() {
+  const ref = useRef(null)
+  const isInView = useInView(ref, { once: true, margin: "-100px" })
+
+  return (
+    <section id="achievements" className="container px-4 py-24 md:py-32" ref={ref}>
+      <div className="mx-auto max-w-6xl">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+          transition={{ duration: 0.5 }}
+          className="mb-12 text-center"
+        >
+          <h2 className="mb-4 text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">
+            Achievements & Education
+          </h2>
+          <p className="text-lg text-muted-foreground">
+            My academic journey and accomplishments
+          </p>
+        </motion.div>
+
+        {/* Education */}
+        <div className="mb-16">
+          <motion.div
+            initial={{ opacity: 0, x: -20 }}
+            animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -20 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className="mb-8 flex items-center gap-2"
+          >
+            <GraduationCap className="h-6 w-6 text-primary" />
+            <h3 className="text-2xl font-bold">Education</h3>
+          </motion.div>
+          <motion.div
+            variants={container}
+            initial="hidden"
+            animate={isInView ? "show" : "hidden"}
+            className="grid gap-6 md:grid-cols-2"
+          >
+            {education.map((edu, index) => (
+              <motion.div key={index} variants={item}>
+                <Card className="h-full hover:shadow-lg transition-all">
+                  <CardHeader>
+                    <CardTitle className="text-xl">{edu.degree}</CardTitle>
+                    <p className="text-sm text-muted-foreground">{edu.institution}</p>
+                    <p className="text-sm font-medium text-primary">{edu.period}</p>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-sm text-muted-foreground">{edu.description}</p>
+                  </CardContent>
+                </Card>
+              </motion.div>
+            ))}
+          </motion.div>
+        </div>
+
+        {/* Achievements */}
+        <div className="mb-16">
+          <motion.div
+            initial={{ opacity: 0, x: -20 }}
+            animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -20 }}
+            transition={{ duration: 0.5, delay: 0.4 }}
+            className="mb-8 flex items-center gap-2"
+          >
+            <Trophy className="h-6 w-6 text-primary" />
+            <h3 className="text-2xl font-bold">Achievements</h3>
+          </motion.div>
+          <motion.div
+            variants={container}
+            initial="hidden"
+            animate={isInView ? "show" : "hidden"}
+            className="grid gap-6 md:grid-cols-2 lg:grid-cols-3"
+          >
+            {achievements.map((achievement, index) => {
+              const Icon = achievement.icon
+              return (
+                <motion.div key={index} variants={item} whileHover={{ scale: 1.05 }}>
+                  <Card className="transition-all hover:shadow-lg h-full">
+                    <CardHeader>
+                      <motion.div
+                        whileHover={{ rotate: 360 }}
+                        transition={{ duration: 0.5 }}
+                        className="mb-2 inline-flex rounded-lg bg-primary/10 p-2 w-fit"
+                      >
+                        <Icon className="h-5 w-5 text-primary" />
+                      </motion.div>
+                      <CardTitle className="text-lg">{achievement.title}</CardTitle>
+                      <p className="text-sm font-medium text-primary">
+                        {achievement.organization}
+                      </p>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-sm text-muted-foreground">
+                        {achievement.description}
+                      </p>
+                    </CardContent>
+                  </Card>
+                </motion.div>
+              )
+            })}
+          </motion.div>
+        </div>
+
+        {/* Certifications */}
+        <div>
+          <motion.div
+            initial={{ opacity: 0, x: -20 }}
+            animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -20 }}
+            transition={{ duration: 0.5, delay: 0.6 }}
+            className="mb-8 flex items-center gap-2"
+          >
+            <Award className="h-6 w-6 text-primary" />
+            <h3 className="text-2xl font-bold">Certifications</h3>
+          </motion.div>
+          <motion.div
+            variants={container}
+            initial="hidden"
+            animate={isInView ? "show" : "hidden"}
+            className="grid gap-4 md:grid-cols-2 lg:grid-cols-3"
+          >
+            {certifications.map((cert, index) => (
+              <motion.div
+                key={index}
+                variants={item}
+                whileHover={{ scale: 1.05, x: 5 }}
+                className="flex items-center gap-3 rounded-lg border bg-card p-4 transition-all hover:shadow-md cursor-default"
+              >
+                <div className="rounded-full bg-primary/10 p-2">
+                  <Award className="h-4 w-4 text-primary" />
+                </div>
+                <p className="text-sm font-medium">{cert}</p>
+              </motion.div>
+            ))}
+          </motion.div>
+        </div>
+      </div>
+    </section>
+  )
+}
