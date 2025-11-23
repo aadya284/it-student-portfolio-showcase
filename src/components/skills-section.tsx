@@ -10,32 +10,32 @@ const skillCategories = [
   {
     title: "Frontend Development",
     icon: Layout,
-    skills: ["React.js", "Next.js", "TypeScript", "Tailwind CSS", "HTML/CSS"],
+    skills: ["React.js", "Next.js", "Tailwind CSS", "HTML/CSS"],
   },
   {
     title: "Backend Development",
     icon: Server,
-    skills: ["Node.js", "Express.js", "REST APIs", "GraphQL", "Authentication"],
+    skills: ["Node.js", "Express.js", "Google Cloud Platform"],
   },
   {
     title: "Database",
     icon: Database,
-    skills: ["MongoDB", "PostgreSQL", "MySQL", "Firebase", "Prisma"],
+    skills: ["MongoDB", "MySQL", "Firebase",],
   },
   {
     title: "Programming Languages",
     icon: Code2,
-    skills: ["JavaScript", "TypeScript", "Python", "Java", "C++"],
-  },
-  {
-    title: "Mobile Development",
-    icon: Smartphone,
-    skills: ["React Native", "Flutter", "Android", "iOS", "Progressive Web Apps"],
+    skills: ["C", "C++", "Data Structures in C++", "Python", "SQL"],
   },
   {
     title: "Tools & Others",
     icon: Wrench,
-    skills: ["Git", "Docker", "AWS", "Linux", "Agile/Scrum"],
+    skills: ["Git/Github", "VS Code", "PowerBI", "Cursor", "Agile/Scrum", "Tableu"],
+  },
+   {
+    title: "Data Analytics ",
+    icon: Database,
+    skills: ["Data Visualizatio tools", "Numpy", "Pandas", "Excel", "Basic Statistics"],
   },
 ]
 

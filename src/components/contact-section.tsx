@@ -2,7 +2,7 @@
 
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { Download, Github, Linkedin, Mail, MapPin, Phone, Twitter } from "lucide-react"
+import { Download, Github, Instagram, Linkedin, Mail, MapPin, Phone } from "lucide-react"
 import { motion } from "framer-motion"
 import { useInView } from "framer-motion"
 import { useRef } from "react"
@@ -61,10 +61,10 @@ export function ContactSection() {
                     <div>
                       <p className="text-sm text-muted-foreground">Email</p>
                       <a
-                        href="mailto:your.email@example.com"
+                        href="mailto:aadyaparadkar@gmail.com"
                         className="font-medium hover:text-primary transition-colors"
                       >
-                        your.email@example.com
+                        aadyaparadkar@gmail.com
                       </a>
                     </div>
                   </motion.div>
@@ -76,10 +76,10 @@ export function ContactSection() {
                     <div>
                       <p className="text-sm text-muted-foreground">Phone</p>
                       <a
-                        href="tel:+919876543210"
+                        href="tel:+919325486728"
                         className="font-medium hover:text-primary transition-colors"
                       >
-                        +91 98765 43210
+                        +91 93254 86728
                       </a>
                     </div>
                   </motion.div>
@@ -90,37 +90,14 @@ export function ContactSection() {
                     </motion.div>
                     <div>
                       <p className="text-sm text-muted-foreground">Location</p>
-                      <p className="font-medium">City, State, India</p>
+                      <p className="font-medium">Pune, Maharashtra, India</p>
                     </div>
                   </motion.div>
                 </motion.div>
               </CardContent>
             </Card>
 
-            {/* Download Resume */}
-            <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.9 }}
-              transition={{ duration: 0.5, delay: 0.4 }}
-            >
-              <Card>
-                <CardContent className="pt-6">
-                  <div className="text-center">
-                    <p className="mb-4 text-sm text-muted-foreground">
-                      Interested in working together?
-                    </p>
-                    <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                      <Button size="lg" className="w-full" asChild>
-                        <a href="/resume.pdf" download>
-                          <Download className="mr-2 h-5 w-5" />
-                          Download Resume
-                        </a>
-                      </Button>
-                    </motion.div>
-                  </div>
-                </CardContent>
-              </Card>
-            </motion.div>
+            {/* Download removed from here to avoid duplication with Resume page */}
           </motion.div>
 
           {/* Social Links */}
@@ -136,7 +113,7 @@ export function ContactSection() {
                   <motion.a
                     variants={item}
                     whileHover={{ scale: 1.03, x: 5 }}
-                    href="https://github.com/yourusername"
+                    href="https://github.com/aadya284"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-3 rounded-lg border bg-background p-4 transition-all hover:shadow-md hover:border-primary"
@@ -144,14 +121,14 @@ export function ContactSection() {
                     <Github className="h-5 w-5" />
                     <div>
                       <p className="font-medium">GitHub</p>
-                      <p className="text-sm text-muted-foreground">@yourusername</p>
+                      <p className="text-sm text-muted-foreground">@aadya284</p>
                     </div>
                   </motion.a>
 
                   <motion.a
                     variants={item}
                     whileHover={{ scale: 1.03, x: 5 }}
-                    href="https://linkedin.com/in/yourusername"
+                    href="https://www.linkedin.com/in/aadya-paradkar-46526a1b4/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-3 rounded-lg border bg-background p-4 transition-all hover:shadow-md hover:border-primary"
@@ -159,29 +136,29 @@ export function ContactSection() {
                     <Linkedin className="h-5 w-5" />
                     <div>
                       <p className="font-medium">LinkedIn</p>
-                      <p className="text-sm text-muted-foreground">@yourusername</p>
+                      <p className="text-sm text-muted-foreground">@aadya-paradkar-46526a1b4</p>
                     </div>
                   </motion.a>
 
                   <motion.a
                     variants={item}
                     whileHover={{ scale: 1.03, x: 5 }}
-                    href="https://twitter.com/yourusername"
+                    href="https://instagram.com/aadya_284"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-3 rounded-lg border bg-background p-4 transition-all hover:shadow-md hover:border-primary"
                   >
-                    <Twitter className="h-5 w-5" />
+                    <Instagram className="h-5 w-5" />
                     <div>
-                      <p className="font-medium">Twitter</p>
-                      <p className="text-sm text-muted-foreground">@yourusername</p>
+                      <p className="font-medium">Instagram</p>
+                      <p className="text-sm text-muted-foreground">@aadya_284</p>
                     </div>
                   </motion.a>
 
                   <motion.a
                     variants={item}
                     whileHover={{ scale: 1.03, x: 5 }}
-                    href="mailto:your.email@example.com"
+                    href="mailto:aadyaparadkar@gmail.com"
                     className="flex items-center gap-3 rounded-lg border bg-background p-4 transition-all hover:shadow-md hover:border-primary"
                   >
                     <Mail className="h-5 w-5" />

@@ -9,64 +9,58 @@ import { useRef } from "react"
 const education = [
   {
     degree: "Bachelor of Technology in Information Technology",
-    institution: "Your University Name",
-    period: "2022 - 2026",
-    description: "Currently in 3rd year with CGPA: 8.5/10",
+    institution: "Bharati Vidyapeeth College of Engineering, Pune",
+    period: "2023 - 2027",
+    description: "Currently in 3rd year with CGPA: 9.4/10",
   },
   {
     degree: "Higher Secondary Education",
-    institution: "Your School Name",
-    period: "2020 - 2022",
-    description: "Percentage: 92%",
+    institution: "Dr. Kalmadi Shamarao High School, Pune",
+    period: "2021 - 2023",
+    description: "Percentage: 67%",
   },
 ]
 
 const achievements = [
   {
-    title: "Hackathon Winner",
-    organization: "TechFest 2024",
-    description: "1st place in 36-hour hackathon with 200+ participants",
+    title: "Hackathon Semi Finalist",
+    organization: "Google GenAI Exchange Hackathon",
+    description: "Got selected as a semi-finalist from over 4000+ teams",
     icon: Trophy,
   },
   {
-    title: "Google Cloud Certified",
-    organization: "Google Cloud Platform",
-    description: "Associate Cloud Engineer Certification",
+    title: "Infosys Springboard ",
+    organization: "Infosys",
+    description: "Course Completion Certification for Natural Language Processing  ",
     icon: Award,
   },
   {
     title: "Smart India Hackathon",
     organization: "Government of India",
-    description: "Finalist in SIH 2023 - Software Edition",
+    description: "Cleared Institutional round for SIH 2025",
     icon: Trophy,
   },
   {
-    title: "Research Paper Published",
-    organization: "IEEE Conference",
-    description: "Published paper on Machine Learning applications in Healthcare",
-    icon: BookOpen,
-  },
-  {
-    title: "Coding Competition",
-    organization: "CodeChef",
-    description: "Ranked in top 100 in monthly coding challenge",
+    title: "Bajaj Finserv Hackathon Phase 2 Qualifier",
+    organization: "Bajaj Finserv",
+    description: "Qualified for Phase 2 among several teams across India",
     icon: Trophy,
   },
   {
     title: "Internship",
-    organization: "Tech Company XYZ",
-    description: "Summer internship as Full Stack Developer",
+    organization: "Innoplexus",
+    description: "Completed a 3 months internship as a Data Engineer",
     icon: Briefcase,
   },
 ]
 
 const certifications = [
-  "AWS Certified Cloud Practitioner",
-  "MongoDB Developer Certification",
-  "Meta Front-End Developer Professional Certificate",
-  "Google IT Automation with Python",
-  "Microsoft Azure Fundamentals",
-  "NPTEL - Data Structures and Algorithms",
+  "Introduction to Natural Language Processing",
+  "Introduction to MongoDB(Students) ",
+  "Udemy- Complete Data Analyst Bootcamp From Basics To Advanced",
+  "Data Analytics Job Simulation(Deliotte)",
+  "NPTEL- Cloud Computing",
+  "NPTEL - The Joy of Computing using Python",
 ]
 
 const container = {

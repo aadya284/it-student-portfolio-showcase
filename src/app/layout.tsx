@@ -8,6 +8,9 @@ import { ThemeProvider } from "@/components/theme-provider";
 export const metadata: Metadata = {
   title: "Portfolio - BTech IT Student",
   description: "Professional portfolio showcasing projects, achievements, and skills",
+  icons: {
+    icon: '/favicon.svg',
+  },
 };
 
 export default function RootLayout({
@@ -35,7 +38,9 @@ export default function RootLayout({
             data-debug="true"
             data-custom-data='{"appName": "YourApp", "version": "1.0.0", "greeting": "hi"}'
           />
-          {children}
+          <main className="w-full max-w-6xl mx-auto px-4">
+            {children}
+          </main>
           <VisualEditsMessenger />
         </ThemeProvider>
       </body>
