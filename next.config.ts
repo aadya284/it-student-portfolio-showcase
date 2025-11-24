@@ -16,7 +16,8 @@ const nextConfig: NextConfig = {
       },
     ],
   },
-  outputFileTracingRoot: path.resolve(__dirname, '../../'),
+  // set outputFileTracingRoot to the project root to avoid duplicated paths on Vercel
+  outputFileTracingRoot: path.resolve(__dirname),
   typescript: {
     ignoreBuildErrors: true,
   },
