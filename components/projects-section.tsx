@@ -26,11 +26,11 @@ const projects = [
     liveUrl:"https://project2.example.com"
   },
   {
-    title: "Job Matching Platform",
-    description: "A web application that matches job seekers with relevant jobs.",
-    image: "/projects/jobmatching.jpg",
-    technologies: ["React Native", "Vite", "Mysql", "TypeScript"],
-    githubUrl: "https://github.com/aadya284/JobSeaching",
+    title: "LeetVisual",
+    description: "An interactive platform that visualizes leetcode problems and their solutions to enhance understanding and learning for developers.",
+    image: "/projects/leetvisual.jpg",
+    technologies: ["React.js","Node.js", "RapidAPI", "TypeScript"],
+    githubUrl: "https://github.com/aadya284/leetcode-visualizer",
     liveUrl:"https://project3.example.com"
   },
   {
