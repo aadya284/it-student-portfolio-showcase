@@ -28,7 +28,7 @@ const projects = [
   {
     title: "LeetVisual",
     description: "An interactive platform that visualizes leetcode problems and their solutions to enhance understanding and learning for developers.",
-    image: "/projects/leetvisual.jpg",
+    image: "/projects/LeetVisual.jpg",
     technologies: ["React.js","Node.js", "RapidAPI", "TypeScript"],
     githubUrl: "https://github.com/aadya284/leetcode-visualizer",
     liveUrl:"https://project3.example.com"
