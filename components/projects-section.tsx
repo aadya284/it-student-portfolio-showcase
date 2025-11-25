@@ -15,7 +15,7 @@ const projects = [
     image: "/projects/karigarsetu.jpg",
     technologies: ["Next.js", "Node.js", "Firebase", "GCP"],
     githubUrl: "https://github.com/aadya284/artisan-marketplace",
-    liveUrl: "https://zesty-dieffenbachia-52df46.netlify.app/",
+    liveUrl: "https://artisan-marketplace-omega.vercel.app/",
   },
   {
     title: "PolicyBrain",
@@ -31,7 +31,7 @@ const projects = [
     image: "/projects/LeetVisual.jpg",
     technologies: ["React.js","Node.js", "RapidAPI", "TypeScript"],
     githubUrl: "https://github.com/aadya284/leetcode-visualizer",
-    liveUrl:"https://project3.example.com"
+    liveUrl:"https://leetcode-visualizer-theta.vercel.app/"
   },
   {
     title: "Netflix Content Analytics",
@@ -54,8 +54,8 @@ const projects = [
     description: "A personal portfolio website to showcase my projects, skills, and achievements.",
     image: "/projects/portfolio.jpg",
     technologies: ["Next.js", "Node.js", "Tailwind CSS", "VS Code"],
-    githubUrl: "https://github.com/aadya284/IT-Student-Portfolio-Showcase",
-    liveUrl: "https://project6.example.com",
+    githubUrl: "https://github.com/aadya284/myportfolio",
+    liveUrl: "https://aadyaparadkar.vercel.app/",
   },
 ]
 
