@@ -38,9 +38,7 @@ export default function RootLayout({
             data-debug="true"
             data-custom-data='{"appName": "YourApp", "version": "1.0.0", "greeting": "hi"}'
           />
-          <main className="w-full max-w-6xl mx-auto px-4">
-            {children}
-          </main>
+          {children}
           <VisualEditsMessenger />
         </ThemeProvider>
       </body>

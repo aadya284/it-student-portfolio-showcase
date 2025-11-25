@@ -15,6 +15,9 @@ const nextConfig: NextConfig = {
         hostname: '**',
       },
     ],
+    formats: ['image/avif', 'image/webp'],
+    deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
+    imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
   },
   // set outputFileTracingRoot to the project root to avoid duplicated paths on Vercel
   outputFileTracingRoot: path.resolve(__dirname),
@@ -30,7 +33,10 @@ const nextConfig: NextConfig = {
         loaders: [LOADER]
       }
     }
-  }
+  },
+  swcMinify: true,
+  optimizeFonts: true,
+  compress: true,
 };
 
 export default nextConfig;

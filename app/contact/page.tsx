@@ -5,9 +5,11 @@ export default function ContactPage() {
   return (
     <div className="min-h-screen">
       <Navigation />
-      <main>
-        <ContactSection />
-      </main>
+      <div className="w-full max-w-6xl mx-auto px-4">
+        <main>
+          <ContactSection />
+        </main>
+      </div>
     </div>
   )
 }

@@ -25,8 +25,9 @@ export default function ResumePage() {
   return (
     <div className="min-h-screen">
       <Navigation />
-      <main className="container px-4 py-12 md:py-16">
-        <div className="mx-auto max-w-4xl">
+      <div className="w-full max-w-6xl mx-auto px-4">
+        <main className="py-12 md:py-16">
+          <div className="mx-auto max-w-4xl">
           {/* Header */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -68,8 +69,9 @@ export default function ResumePage() {
               </motion.div>
             </div>
           </motion.div>
-        </div>
-      </main>
+          </div>
+        </main>
+      </div>
     </div>
   )
 }

@@ -5,10 +5,11 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       <Navigation />
-      <main>
-        <HeroSection />
-      </main>
-     
+      <div className="w-full max-w-6xl mx-auto px-4">
+        <main>
+          <HeroSection />
+        </main>
+      </div>
     </div>
   )
 }

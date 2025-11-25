@@ -49,6 +49,7 @@ export function HeroSection() {
               initial={{ opacity: 0 }}
               animate={{ opacity: headingComplete ? 1 : 0 }}
               transition={{ duration: 0.5 }}
+              style={{ willChange: 'opacity' }}
               className="mb-4 text-lg font-medium text-muted-foreground md:text-2xl min-h-8"
             >
               {displayedRole}
@@ -62,6 +63,7 @@ export function HeroSection() {
                   : { opacity: 0, y: 20, scale: 0.98 }
               }
               transition={{ type: "spring", stiffness: 110, damping: 14, mass: 0.8 }}
+              style={{ willChange: 'transform, opacity' }}
               className="mb-6 text-base md:text-lg text-muted-foreground max-w-2xl"
             >
               Passionate about building innovative solutions and learning new technologies. 
@@ -72,6 +74,7 @@ export function HeroSection() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 1.8 }}
+              style={{ willChange: 'transform, opacity' }}
               className="flex flex-wrap justify-center md:justify-start gap-4 mb-8"
             >
               <Button size="lg" asChild>
@@ -86,6 +89,7 @@ export function HeroSection() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.5, delay: 2.1 }}
+              style={{ willChange: 'opacity' }}
               className="flex justify-center md:justify-start gap-4"
             >
               <Button variant="ghost" size="icon" asChild>
