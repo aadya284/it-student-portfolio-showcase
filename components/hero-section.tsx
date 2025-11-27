@@ -1,7 +1,7 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
-import { ArrowDown, Github, Linkedin, Mail } from "lucide-react"
+import { ArrowDown, Github, Linkedin, LucideBluetoothConnected, Mail } from "lucide-react"
 import { useEffect } from "react"
 import { motion } from "framer-motion"
 import { useTypingEffect } from "@/hooks/use-typing-effect"
